@@ -7,9 +7,9 @@ import joblib
 import time
 
 # Load saved model and both scalers
-model = joblib.load(r'C:\Users\ADMIN\Desktop\fraud-detection\fraud_rf_model.pkl')
-scaler_amount = joblib.load(r'C:\Users\ADMIN\Desktop\fraud-detection\scaler_amount.pkl')
-scaler_time = joblib.load(r'C:\Users\ADMIN\Desktop\fraud-detection\scaler_time.pkl')
+model = joblib.load('fraud_rf_model.pkl')
+scaler_amount = joblib.load('scaler_amount.pkl')
+scaler_time = joblib.load('scaler_time.pkl')
 
 # Load dataset
 df = pd.read_csv(r'D:\creditcard.csv')
