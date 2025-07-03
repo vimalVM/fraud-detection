@@ -12,7 +12,7 @@ scaler_amount = joblib.load('scaler_amount.pkl')
 scaler_time = joblib.load('scaler_time.pkl')
 
 # Load dataset
-df = pd.read_csv(r'D:\creditcard.csv')
+df = pd.read_csv('cred_sample.csv')
 
 st.markdown(
     """
